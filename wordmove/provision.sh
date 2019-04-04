@@ -6,8 +6,8 @@ else
 	sudo apt-get install -y ruby-dev
 	echo "ruby-dev installed"
 	echo "gem not installed"
-	gem install rubygems-update
-	update_rubygems
+	sudo gem install rubygems-update
+	sudo update_rubygems
 fi
 
 # wordmove install
