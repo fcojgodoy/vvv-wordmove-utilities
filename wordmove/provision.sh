@@ -27,7 +27,7 @@ else
     echo "can't require yaml"
     echo "set require yaml"
 
-    sed -i "7i require\ \'yaml\'" $wordmove_path
+    sudo sed -i "7i require\ \'yaml\'" $wordmove_path
 
     echo "can require yaml"
 
