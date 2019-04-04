@@ -3,7 +3,7 @@
 if [ $(gem -v|grep '^2.') ]; then
 	echo "gem installed"
 else
-	apt-get install -y ruby-dev
+	sudo apt-get install -y ruby-dev
 	echo "ruby-dev installed"
 	echo "gem not installed"
 	gem install rubygems-update
