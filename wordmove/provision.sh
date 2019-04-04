@@ -16,7 +16,7 @@ if [ "$wordmove_install" = true ]; then
   echo "wordmove installed"
 else
   echo "wordmove not installed"
-  gem install wordmove
+  sudo gem install wordmove
 
   wordmove_path="$(gem which wordmove | sed -s 's/.rb/\/deployer\/base.rb/')"
   if [  "$(grep yaml $wordmove_path)" ]; then
