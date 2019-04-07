@@ -8,6 +8,7 @@ else
 	echo "gem not installed"
 	sudo gem install rubygems-update
 	sudo update_rubygems
+	sudo gem update --system
 fi
 
 # wordmove install
