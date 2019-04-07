@@ -3,7 +3,9 @@
 if [ $(gem -v|grep '^2.') ]; then
 	echo "gem installed"
 else
-	sudo apt-get install -y ruby-dev
+	sudo apt-add-repository -y ppa:brightbox/ruby-ng
+	sudo apt-get update
+	sudo apt-get install -y ruby2.6-dev
 	echo "ruby-dev installed"
 	echo "gem not installed"
 	sudo gem install rubygems-update
