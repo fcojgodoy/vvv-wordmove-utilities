@@ -5,7 +5,7 @@ if [ $(gem -v|grep '^2.') ]; then
 else
 	sudo apt-add-repository -y ppa:brightbox/ruby-ng
 	sudo apt-get update
-	sudo apt-get install -y ruby2.4 ruby2.4-dev
+	sudo apt-get install -y ruby2.6 ruby2.6-dev
 	echo "ruby-dev installed"
 	echo "gem not installed"
 	sudo gem install rubygems-update
