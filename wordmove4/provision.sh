@@ -5,12 +5,11 @@ if [ $(gem -v|grep '^2.') ]; then
 else
 	sudo apt-add-repository -y ppa:brightbox/ruby-ng
 	sudo apt-get update
-	sudo apt-get install -y ruby2.6-dev
+	sudo apt-get install -y ruby2.6-full
 	echo "ruby-dev installed"
 	echo "gem not installed"
 	sudo gem install rubygems-update
 	sudo update_rubygems
-	sudo gem update --system
 fi
 
 # wordmove install
